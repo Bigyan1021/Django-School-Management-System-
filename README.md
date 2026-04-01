@@ -49,3 +49,4 @@ black .
 ```base
 python manage.py test
 ```
+# School-Management-system
