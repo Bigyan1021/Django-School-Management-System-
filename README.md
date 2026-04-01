@@ -50,3 +50,4 @@ black .
 python manage.py test
 ```
 # School-Management-system
+# Django-school-Management-system
