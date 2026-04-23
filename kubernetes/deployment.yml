@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-school-management-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-school-management-system
+  template:
+    metadata:
+      labels:
+        app: django-school-management-system
+    spec:
+      containers:
+        - name: django-school-management-system
+          image: bigyankc1021/django-school-management-system:main
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "100Mi"
+            limits:
+              cpu: "700m"
+              memory: "700Mi"
+
